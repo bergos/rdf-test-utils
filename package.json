@@ -1,0 +1,26 @@
+{
+	"name": "rdf-test-utils",
+	"version": "0.1.0",
+	"description": "Test utils for RDF Interfaces objects",
+	"main": "rdf-test-utils.js",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/bergos/rdf-test-utils.git"
+	},
+	"keywords": [
+		"RDF",
+		"Test",
+		"Utils"
+	],
+	"author": "Thomas Bergwinkl",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/bergos/rdf-test-utils/issues"
+	},
+	"homepage": "https://github.com/bergos/rdf-test-utils",
+	"dependencies": {
+		"es6-promise": ">=0.1.1",
+		"jsonld": ">=0.1.26"
+	},
+	"readmeFilename": "README.md"
+}
