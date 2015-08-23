@@ -1,7 +1,5 @@
 (function (root, factory) {
   if (typeof module !== 'undefined' && module.exports) {
-	global.Promise = require('es6-promise').Promise;
-
 	var
 	  assert = require('assert'),
 	  jsonld = require('jsonld');
