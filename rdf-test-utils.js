@@ -10,7 +10,7 @@
   } else {
 	root.rdf.testUtils = factory(root.assert, root.jsonld, root.rdf);
   }
-})(this, function (assert, jsonld, rdf) {
+})(this, function (assert, jsonld) {
   return function (rdf) {
 	var u = {};
 
@@ -30,6 +30,22 @@
 	};
 
 	u.p = {};
+
+    if (typeof module !== 'undefined' && module.exports) {
+      u.p.readFile = function (filename, base) {
+        return new Promise(function (resolve) {console.log(__dirname);
+          resolve(require('fs').readFileSync(require('path').join(base, filename)).toString());
+        });
+      };
+    } else {
+      u.p.readFile = function (filename) {
+        return new Promise(function (resolve) {
+          rdf.defaultRequest('GET', filename, {}, null, function (status, headers, content) {
+            resolve(content);
+          });
+        });
+      };
+    }
 
 	u.p.parseTurtle = function (s, b) {
 	  return new Promise(function (resolve, reject) {
