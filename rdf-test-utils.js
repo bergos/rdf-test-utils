@@ -31,7 +31,7 @@
 
     if (typeof module !== 'undefined' && module.exports) {
       u.p.readFile = function (filename, base) {
-        return new Promise(function (resolve) {console.log(__dirname);
+        return new Promise(function (resolve) {
           resolve(require('fs').readFileSync(require('path').join(base, filename)).toString());
         });
       };
