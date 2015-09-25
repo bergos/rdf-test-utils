@@ -1,6 +1,6 @@
 {
   "name": "rdf-test-utils",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Test utils for RDF Interfaces objects",
   "main": "rdf-test-utils.js",
   "scripts": {
@@ -22,7 +22,9 @@
   },
   "homepage": "https://github.com/rdf-ext/rdf-test-utils",
   "dependencies": {
-    "jsonld": "^0.3.24"
+    "jsonld": "^0.3.24",
+    "rdf-ext": "^0.3.0",
+    "rdf-parser-jsonld": "^0.1.0"
   },
   "readmeFilename": "README.md"
 }
