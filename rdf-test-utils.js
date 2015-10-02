@@ -1,6 +1,6 @@
 var assert = require('assert');
 var jsonld = require('jsonld');
-var rdf = require('rdf-ext')();
+var rdf = require('rdf-ext');
 var JsonLdParser = require('rdf-parser-jsonld');
 
 var u = {};
