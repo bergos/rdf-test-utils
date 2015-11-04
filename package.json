@@ -22,9 +22,7 @@
   },
   "homepage": "https://github.com/rdf-ext/rdf-test-utils",
   "dependencies": {
-    "jsonld": "^0.3.24",
-    "rdf-ext": "^0.3.0",
-    "rdf-parser-jsonld": "^0.1.0"
+    "rdf-ext": "^0.3.0"
   },
   "readmeFilename": "README.md"
 }
